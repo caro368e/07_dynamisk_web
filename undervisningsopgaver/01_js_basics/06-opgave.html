@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+
+    <input type="text" id="længde">
+    <input type="text" id="bredde">
+    <button id="knap">Beregn areal </button>
+
+    <script>
+        document.querySelector("#knap").addEventListener("click", button_click)
+
+        function button_click() {
+
+            let længde = document.querySelector("#længde").value;
+            let bredde = document.querySelector("#bredde").value;
+            let areal = længde * bredde;
+            console.log("Arealet er", areal);
+        }
+
+    </script>
+</body>
+
+</html>
